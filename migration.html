@@ -10,20 +10,23 @@
                 Migrating to Road Runner 1.0
             </h1>
             <h2>
-                Things that are <i>completely</i> gone
+                Things that are <i>completely</i> removed
             </h2>
             <p style="font-size: 120%;">
                 <br>
-                1. The PID controller class has been removed. If you want your code to be drop in compatible (just chanigng a few imports)
-                you can download it from <a href="https://gist.github.com/rbrott/89a2b1ce538ec860851670faeb0b721e">this Github Gist</a>, or
-                you can use a different PID controller. 
+                1. The PID controller class is no longer included in the library.
+                You can download it standalone from <a href="https://gist.github.com/rbrott/89a2b1ce538ec860851670faeb0b721e">this GitHub Gist</a>,
+                or you can use a different PID controller such as the guide from <a href="https://www.ctrlaltftc.com/">CTRL ALT FTC.</a>
                 <br><br>
                 2. You can no longer use <code>lineTo()</code> to do a direct line to a point. Your direct line options are <code>lineToY()</code>
                 and <code>lineToX()</code>. They keep the tangent of your previous path and drive to that X or Y value, unless you set a tangent yourself.
-                You can get around this by using something like <code>splineTo()</code> with the same start and end tangent (with <code>setTangent()</code>)
+                You can get around this by using <code>strafeTo()</code> which drives directly to an arbitrary position,
+                or using <code>splineTo()</code> with the same start and end tangent (with <code>setTangent()</code>).
                 <br><br>
-                3. The marker system is gone. It has been replaced with actions, pretty much a commandbase, like Mercurial or FTCLib. It allows for much more
-                powerful control of robot systems.
+                3. The marker system has been removed. 
+                It has been replaced with the Actions system, which is a command-based system like Mercurial or FTCLib.
+                It makes it much easier to do operations in parallel;
+                further information is available at <a href="https://rr.brott.dev/docs/v1-0/actions/">the official docs.</a>
             </p>
         </div>
     </body> 
