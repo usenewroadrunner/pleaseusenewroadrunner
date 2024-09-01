@@ -1,7 +1,9 @@
 .center {
     margin: auto;
+    margin-top: 10px;
     max-width: 70%;
 }
+
 @media only screen and (max-width: 1000px){
     .center {
         max-width: 90%
@@ -22,6 +24,10 @@ body {
 h1 {
     text-align: center;
     font-size: 3.5rem;
+    background-color: #292929;
+    border-radius: 10px;
+    border-color: azure;
+    padding: 5px;
 }
 h2 {
     font-size: 2.5rem;
