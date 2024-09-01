@@ -1,13 +1,14 @@
 .center {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    padding-top: 0;
-    align-content: center;
+    margin: auto;
     max-width: 70%;
 }
+@media only screen and (max-width: 1000px){
+    .center {
+        max-width: 90%
+    }
+}
 p {
-    font-size:calc(12px + 100%);
+    font-size: 1.5rem;
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
@@ -20,11 +21,10 @@ body {
 }
 h1 {
     text-align: center;
-    font-size: 350%;
+    font-size: 3.5rem;
 }
 h2 {
-    font-size: 250%;
-    padding-left: 5%;
+    font-size: 2.5rem;
 }
 .img{
     width: 40%;
@@ -56,53 +56,20 @@ button {
     padding: 10px 10px;
     text-align: center;
     text-decoration: none;
-    font-size:calc(12px + 100%);
+    font-size:1.5rem;
     opacity: 65%;
+    align-content: center;
 }
+
 button:hover{
     opacity: 100%;
     cursor: pointer;    
 }
-
-.footerContainer {
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    padding: 8px;
-    align-content: center;
-    display: flexbox;
+button img {
+    height: auto;
+    width: 15%; 
+    border-radius: 20%; 
+    background-color: azure; 
+    margin-top: .5vw;
+    height: fit-content;
 }
-
-.footerContainer div{
-    float: left;
-    width: auto;
-    margin-left: .25%;
-    margin-right: .25%;
-    margin-bottom: .75%;
-}
-
-.headderContainer{
-    display: flex;
-    background-color: #292929;
-    padding: 1%;
-}
-
-.headderColumn{
-    float: left;
-    margin-left: .25%;
-    margin-right: .25%;
-    width: fit-content;
-}
-.galleryContainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}   
-.galleryContainer img {
-    max-width: calc(32% - 20px);
-    height: fit-contenwdct;
-    max-height: 50%;
-    margin: 10px;
-    background-color: azure;
-}   

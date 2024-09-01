@@ -1,2 +1,2 @@
-# please.usenewroadrunner.com
-please use 1.0
+# please.usenewroadrunner.fyi
+## Why you should be updating roadrunner to 1.0
