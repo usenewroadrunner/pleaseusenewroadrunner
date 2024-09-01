@@ -1,6 +1,7 @@
 .center {
     margin: auto;
     margin-top: 10px;
+    padding-top: 10px;
     max-width: 70%;
 }
 
@@ -27,7 +28,9 @@ h1 {
     background-color: #292929;
     border-radius: 10px;
     border-color: azure;
-    padding: 5px;
+    border: azure;
+    padding: 10px;
+    margin: 10px;
 }
 h2 {
     font-size: 2.5rem;
